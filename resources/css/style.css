@@ -1,14 +1,28 @@
 body {
-
+  font-size: 14px;
+  margin: 3rem;
+  font-family: 'Work Sans', sans-serif;
 }
 
 #game {
   cursor: pointer;
 }
 
+#instructions h3 {
+  font-weight: bold;
+}
+
+#instructions {
+  color: rgb(74, 74, 74);
+}
+
 .card {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 8.5rem;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
 }

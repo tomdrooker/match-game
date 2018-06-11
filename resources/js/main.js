@@ -104,8 +104,14 @@ MatchGame.flipCard = function($card, $game) {
 
   if (flippedArray.length === 2) {
     if (flippedArray[0].data("value") === flippedArray[1].data("value")) {
-      flippedArray[0].css("background-color", "green");
-      flippedArray[1].css("background-color", "green");
+      flippedArray[0].css({
+        "background-color": "rgb(153, 153, 153)",
+        "color": "rgb(204, 204, 204)"
+      });
+      flippedArray[1].css({
+        "background-color": "rgb(153, 153, 153)",
+        "color": "rgb(204, 204, 204)"
+      });
       count += 1;
     } else if (flippedArray[0].data("value") !== flippedArray[1].data("value")) {
       window.setTimeout(function() {
@@ -121,6 +127,6 @@ MatchGame.flipCard = function($card, $game) {
   }
 
   if (count === 8) {
-    window.alert("ok ok you win already. hit refresh to play again");
+    window.alert("You win! Hit refresh to play again.");
   }
 };
